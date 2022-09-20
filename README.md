@@ -23,7 +23,7 @@ This app was made in learning purpose and it's based on the app ByteCoin from An
 </p>
 
 ## Test this app
-To test this app add your api-key from [coinapi](http://coinapi.io) to here:
+To test this app add your api-key from [coinapi](http://coinapi.io) here:
 ```Swift
 CoinNetworkManager.swift
 
