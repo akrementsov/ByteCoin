@@ -10,7 +10,7 @@ This app was made in learning purpose and it's based on the app ByteCoin from An
 - UX logic
 - Animating a view to present a keyboard
 
-## App in action
+## The app in the action
 ![](Images/ByteCoin.gif)
 
 ## Images
