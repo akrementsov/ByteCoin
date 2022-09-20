@@ -21,3 +21,14 @@ This app was made in learning purpose and it's based on the app ByteCoin from An
   <img src="Images/Img4.png" width="150" />
   <img src="Images/Img5.png" width="150" />
 </p>
+
+# Test this app
+To test this app add your api-key from [coinapi](http://coinapi.io) to here:
+```Swift
+CoinNetworkManager.swift
+
+final class CoinNetworkManager {
+// ...
+    private let apiKey = "ENTER YOUR API KEY HERE"
+// ...
+```
