@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol CoinNetworkManagerDelegate {
+protocol CoinNetworkManagerDelegate: AnyObject {
     func coinManager(_ manager: CoinNetworkManager, didUpdateCoin coin: CoinModel)
     func coinManager(_ manager: CoinNetworkManager, didFailWithError error: Error)
 }
@@ -21,7 +21,7 @@ final class CoinNetworkManager {
     
     let fiatCurrencyArray = ["AUD", "BRL","CAD","CNY","EUR","GBP","HKD","IDR","ILS","INR","JPY","MXN","NOK","NZD","PLN","RON","RUB","SEK","SGD","USD","ZAR"]
     let digitalCurrencyArray = ["BTC", "ETH", "USDT", "USDC", "BNB", "BUSD", "XRP", "ADA", "SOL", "DOGE", "DOT", "MATIC"]
-    var delegate: CoinNetworkManagerDelegate?
+    weak var delegate: CoinNetworkManagerDelegate?
     
     private var path = ""
     private let baseURL = "https://rest.coinapi.io/v1/exchangerate"

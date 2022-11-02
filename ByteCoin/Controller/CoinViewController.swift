@@ -19,7 +19,6 @@ final class CoinViewController: UIViewController {
     var coinManager = CoinNetworkManager()
     var coinCalculator = CoinCalculatorManager()
     
-    
     lazy private var badConnectionAlert: UIAlertController = {
         let alertController = UIAlertController(title: "Bad internet connection", message: "Check your internet connection and try one more time", preferredStyle: .alert)
         let action = UIAlertAction(title: "Ok", style: .default)
